@@ -5,45 +5,6 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "nom-web#build": {
-      "dependsOn": ["^build"],
-      "env": [
-        "PUBLIC_PUSHER_KEY",
-        "PUBLIC_CLOUDFLARE_ACCOUNT_HASH",
-        "PUBLIC_ALCHEMY_API_KEY",
-        "PUBLIC_WALLET_CONNECT_PROJECT_ID"
-      ],
-      "outputs": ["dist/**"]
-    },
-    "nouns-camp#build": {
-      "dependsOn": ["^build"],
-      "env": [
-        "APP_HOST",
-        "APP_PRODUCTION_URL",
-        "CAMP_FARCASTER_ACCOUNT_FID",
-        "CAMP_FARCASTER_ACCOUNT_PRIVATE_KEY",
-        "EDGE_CONFIG",
-        "ETHERSCAN_API_KEY",
-        "FARCASTER_HUB_HTTP_ENDPOINT",
-        "KV_REST_API_READ_ONLY_TOKEN",
-        "KV_REST_API_TOKEN",
-        "KV_REST_API_URL",
-        "KV_URL",
-        "NEYNAR_API_KEY",
-        "NOUNS_SUBGRAPH_URL",
-        "PROPDATES_SUBGRAPH_URL",
-        "FLOWS_SUBGRAPH_URL",
-        "SENTRY_AUTH_TOKEN",
-        "SESSION_SEAL_SECRET",
-        "TENDERLY_API_KEY",
-        "TENDERLY_PROJECT_SLUG"
-      ],
-      "outputs": [".next/**", "!.next/cache/**"]
-    },
-    "obvious-landing#build": {
-      "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
-    },
     "farcord#build": {
       "dependsOn": ["^build"],
       "env": [

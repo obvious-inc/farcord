@@ -1,17 +1,32 @@
-# Obvious frontend monorepo
+# Farcord
 
-👋
+A Discord-like interface for Farcaster.
 
-[NOM](https://app.nom.wtf) at [apps/nom-web](https://github.com/obvious-inc/frontend-monorepo/tree/main/apps/nom-web)
+## Getting Started
 
-[Nouns Camp](https://www.nouns.camp/) at [apps/nouns-camp](https://github.com/obvious-inc/frontend-monorepo/tree/main/apps/nouns-camp)
+### Installation
 
-[Farcord](https://farcord.com) at [apps/farcord](https://github.com/obvious-inc/frontend-monorepo/tree/main/apps/farcord)
+```bash
+# Install dependencies
+pnpm install
+```
 
-## Development
+### Development
 
-### LLM Tools
+```bash
+# Start the development server
+cd apps/farcord && pnpm dev
+```
 
-This repo includes an `AI-CONTEXT.md` file with project-specific guidelines for AI coding assistants. Point your LLM tools to this file for better context and code consistency.
+### Build
 
-For tools expecting specific filenames, consider creating a symlink (e.g., `ln -s AI-CONTEXT.md TOOL_SPECIFIC_FILENAME`).
+```bash
+# Build for production
+cd apps/farcord && pnpm build
+```
+
+## Project Structure
+
+- `apps/farcord`: Main application
+- `packages/common`: Shared utilities
+- `packages/ui-web`: UI component library
